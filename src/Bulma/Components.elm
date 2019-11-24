@@ -1073,7 +1073,7 @@ When its first argument is `True`, it transforms into a `navbarCross`.
 
 -}
 navbarBurger : IsActive -> List (Attribute msg) -> List (Html msg) -> NavbarBurger msg
-navbarBurger isActive = node "a" [ B.navbarBurger, if isActive then B.isActive else B.none ]
+navbarBurger isActive = node "div" [ B.navbarBurger, if isActive then B.isActive else B.none ]
 
 {-| A simple "X" character; the active version of `navbarBurger`.
 -}
